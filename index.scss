@@ -1,0 +1,122 @@
+
+@font-face {
+    font-family: 'fighter-font';
+    src: url(./assets/great_fighter/GreatFighterDemo.otf) format("otf"),
+    url(./assets/great_fighter/GreatFighterDemo.ttf);
+}
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 600;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+}
+section {
+    width: 100%;
+    height: 100vh;
+    padding: 2rem;
+    background-color: #252525;
+    background-image: url(./assets/maxime-desmettre-intro-fortressarena.jpeg);
+    background-size: cover;
+    background-position: center;
+    font-family: 'fighter-font';
+    font-size: 1.5rem;
+}
+.game-logo {
+    width: 100%;
+    text-align: center;
+    &__img {
+        height: auto;
+        width: 30%;
+    }
+}
+
+.arena {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    &__player1, &__player2 {
+        margin: 0.5rem;
+        border-radius: 1.25rem;
+        font-family: 'fighter-font';
+        font-size: 1.5rem;
+        width: 45%;
+        border: .25rem solid red;
+        padding: 1.5rem;
+    }
+    &__character1, &__character2 {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        color: white;
+        text-transform: uppercase;
+        align-items: center;
+    }
+}
+.label {
+    font-family: 'fighter-font';
+    font-size: 1rem;
+    margin: 1.25rem 0.5rem;
+    color: rgb(181, 168, 168);
+}
+button {
+    font-family: 'fighter-font';
+    font-size: 1.5rem;
+    border-radius: .625rem;
+    border: .0625rem solid rgb(181, 168, 168);;
+    background-color: brown;
+    width: 100%;
+    margin: auto;
+    color: white;
+    padding: 1rem;
+}
+button:hover {
+    background-color: #7e0b0b;
+    cursor: pointer;
+}
+button:active {
+    background-color: #252525;
+}
+.result {
+    border-radius: .625rem;
+    width: 100%;
+    text-align: center;
+    color: green;
+    background-color: #252525;
+    text-transform: uppercase;
+    font-size: 2.5rem;
+    padding: 3rem;
+}
+
+.hero-img1, .hero-img2 {
+    width: 50%;
+}
+
+img {
+    width: 100%;
+    height: auto;
+}
+
+.winner {
+    background-color: rgb(0, 128, 0, 0.6);
+    border-color: green;
+}
+
+
+.loser {
+    background-color: rgb(255, 0, 0, 0.6);
+    border-color: red;
+}
+
+p {
+    font-family: 'fighter-font';
+    font-size: 1.5rem;
+    
+}

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./index.css">
+    <title>Document</title>
+</head>
+<body>
+    <section>
+        <div class="game-logo"><img class="game-logo__img" src="./assets/26af463f000a8cc9fb6defe62182f921.png" alt="app-logo"></div>
+        <div class="arena">
+            <div class="arena__player1">
+                <div class="arena__character1">
+                    <button class="arena__choose-button1">Choose your character</button>
+                    <p class="label">name:</p>
+                    <p class="hero-name1"></p>
+                    <p class="label">Backstory:</p>
+                    <p class="hero-backstory1"></p>
+                    <p class="label">Experience:</p>
+                    <p class="hero-experience1"></p>
+                    <div class="hero-img1"></div>
+                </div>
+            </div>
+            <div class="arena__player2">
+                <div class="arena__character2">
+                    <button type='button' class="arena__choose-button2">Choose your character</button>
+                    <p class="label">name:</p>
+                    <p class="hero-name2"></p>
+                    <p class="label">Backstory:</p>
+                    <p class="hero-backstory2"></p>
+                    <p class="label">Experience:</p>
+                    <p class="hero-experience2"></p>
+                    <div class="hero-img2"></div>
+                </div>
+            </div>
+            <button class="arena__fight-button">Fight</button>
+            <p class="result"></p>
+        </div>
+    </section>
+    <script src="https://cdn.jsdelivr.net/npm/axios@1.1.2/dist/axios.min.js"></script>
+    <script src="./index.js"></script>
+</body>
+</html>
